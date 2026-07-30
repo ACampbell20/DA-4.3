@@ -1,3 +1,12 @@
+#ifndef CAR_H
+#define CAR_H
+
+#include <iostream>
+#include <string>
+#include "Vehicle.h"
+
+using namespace std;
+
 class Car : public Vehicle
 {
 private:
@@ -18,3 +27,5 @@ public:
 
     friend ostream& operator<<(ostream& out, const Car& c);
 };
+
+#endif
